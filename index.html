@@ -1,235 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>AgriCulture | Hama dan Penyakit Tanaman Kedelai</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <title>IFONTIA AMANDA</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-    <style>
-      .text-justify {
-        text-align: justify;
-      }
-      .bg-custome {
-        background-color: #abb8c3;
-      }
-    </style>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">𝐈𝐅𝐎𝐍𝐓𝐈𝐀 𝐀𝐌𝐀𝐍𝐃𝐀</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+          <a href="index.html" class="navbar-brand">
+          </a>
+          <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="hama.html" class="nav-item nav-link">Hama</a>
+                <a href="penyakit.html" class="nav-item nav-link">Penyakit</a>
+                <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu bg-light rounded-0 m-0">
+                    <a href="pengendalian hama.html" class="dropdown-item">Pengendalian Hama</a>
+                    <a href="Pengendalian Penyakit.html" class="dropdown-item">Pengendalian Penyakit</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+              <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+      <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/page.jpeg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 text-center">
+                    <p class="fs-4 text-white animated zoomIn">Welcome to</p>
+                    <h1 class="display-1 text-dark mb-4 animated zoomIn" style="font-size: 50px">Hama dan Penyakit Tanaman Kedelai (Glycine max L.)</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/page.jpeg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 text-center">
+                    <p class="fs-4 text-white animated zoomIn">Welcome to</p>
+                    <h1 class="display-1 text-dark mb-4 animated zoomIn" style="font-size: 50px">Hama dan Penyakit Tanaman Kedelai (Glycine max L.)</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">𝐻𝑜𝑚𝑒</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about_tyaaa">𝐴𝑏𝑜𝑢𝑡 𝑇𝑦𝑎𝑎𝑎</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galery">𝐺𝑎𝑙𝑒𝑟𝑦</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">𝐶𝑜𝑛𝑡𝑎𝑐𝑡</a>
-            </li>
-          </ul>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
+    </div>
+    <!-- Carousel End -->
 
-    <!-- Home -->
-    <section class="jumbotron text-center mt-4 pt-5" id="Home">
-      <img src="./1.jpg" alt="Foto Ifontia Amanda" width="200" class="rounded-circle" />
-      <h3 class="display-4 mt-4">𝐈𝐅𝐎𝐍𝐓𝐈𝐀 𝐀𝐌𝐀𝐍𝐃𝐀</h3>
-      <p class="lead">𝑆𝑡𝑢𝑑𝑒𝑛𝑡𝑠 𝐹𝑟𝑜𝑚 𝑇ℎ𝑒 𝐶𝑟𝑜𝑝 𝑃𝑟𝑜𝑑𝑢𝑐𝑡𝑖𝑜𝑛 𝑇𝑒𝑐ℎ𝑛𝑜𝑙𝑜𝑔𝑦 𝑆𝑡𝑢𝑑𝑦 𝑃𝑟𝑜𝑔𝑟𝑎𝑚</p>
-    </section>
-    <!-- End Home -->
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-      <style>
-        .path-0 {
-          animation: pathAnim-0 4s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
-        @keyframes pathAnim-0 {
-          0% {
-            d: path(
-              "M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-            );
-          }
-          25% {
-            d: path(
-              "M 0,500 L 0,187 C 57.471254162042186,191.955728203231 114.94250832408437,196.91145640646195 167,190 C 219.05749167591563,183.08854359353805 265.7012208657047,164.30990257738318 321,165 C 376.2987791342953,165.69009742261682 440.25260821309655,185.84893328400543 490,203 C 539.7473917869034,220.15106671599457 575.288346281909,234.29436428659514 625,200 C 674.711653718091,165.70563571340486 738.5940066592674,82.973609569614 801,94 C 863.4059933407326,105.026390430386 924.3356270810211,209.81119743494878 972,232 C 1019.6643729189789,254.18880256505122 1054.063485016648,193.78160069059072 1099,162 C 1143.936514983352,130.21839930940928 1199.410432852386,127.06239980268836 1258,136 C 1316.589567147614,144.93760019731164 1378.2947835738069,165.96880009865583 1440,187 L 1440,500 L 0,500 Z"
-            );
-          }
-          50% {
-            d: path(
-              "M 0,500 L 0,187 C 35.10040695523493,195.05475397706252 70.20081391046986,203.10950795412504 132,216 C 193.79918608953014,228.89049204587496 282.2971513133555,246.61672216056235 341,223 C 399.7028486866445,199.38327783943765 428.61058083610794,134.4236034036256 474,129 C 519.3894191638921,123.5763965963744 581.2605253422124,177.68886422493526 630,192 C 678.7394746577876,206.31113577506474 714.3473177950425,180.8209396966334 771,155 C 827.6526822049575,129.1790603033666 905.3502034776175,103.02737698853126 966,103 C 1026.6497965223825,102.97262301146874 1070.2518682944876,129.06955234924158 1127,138 C 1183.7481317055124,146.93044765075842 1253.642323344432,138.69441361450242 1308,144 C 1362.357676655568,149.30558638549758 1401.178838327784,168.1527931927488 1440,187 L 1440,500 L 0,500 Z"
-            );
-          }
-          75% {
-            d: path(
-              "M 0,500 L 0,187 C 62.184289061536575,201.0901220865705 124.36857812307315,215.18024417314095 180,203 C 235.63142187692685,190.81975582685905 284.709976569244,152.36914539400667 329,145 C 373.290023430756,137.63085460599333 412.7915155999508,161.34317425083242 467,162 C 521.2084844000492,162.65682574916758 590.1239610309532,140.25815760266372 641,120 C 691.8760389690468,99.74184239733628 724.7126402762364,81.62419533851276 776,97 C 827.2873597237636,112.37580466148724 897.0254778641017,161.24506104328523 955,181 C 1012.9745221358983,200.75493895671477 1059.1854482673573,191.39556048834626 1119,209 C 1178.8145517326427,226.60443951165374 1252.2327290664693,271.17269700332963 1308,272 C 1363.7672709335307,272.82730299667037 1401.8836354667653,229.91365149833518 1440,187 L 1440,500 L 0,500 Z"
-            );
-          }
-          100% {
-            d: path(
-              "M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-            );
-          }
-        }
-      </style>
-      <path
-        d="M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-        stroke="none"
-        stroke-width="0"
-        fill="#abb8c3"
-        fill-opacity="1"
-        class="transition-all duration-300 ease-in-out delay-150 path-0"
-      ></path>
-    </svg>
-    <!-- About Tyaaa -->
-    <section class="about tyaaa bg-custome" id="about_tyaaa">
-      <div class="container text-center">
-        <h3 class="mb-3">𝐴𝑏𝑜𝑢𝑡 𝑇𝑦𝑎𝑎𝑎</h3>
-        <div class="row d-flex justify-content-center">
-          <div class="flex-grow-1 ms-3" style="text-align: justify">
-            Nama saya Ifontia Amanda yang lahir dan besar di kota Bone. Perjalanan pendidikan saya dimulai pada tahun 2010, dimana tempat saya belajar dasar-dasar pengetahuan dan bembentuk fondasi pendidikan awal di Sd INP 12/79 Parippung.
-            Setelah lulus, saya melanjutkan ke jenjang SMP di SMP Negeri 1 Barebbo pada tahun 2016. Masa SMP merupakan waktu yang penuh tantangan, di mana saya mulai mengembangkan minat dan bakat, serta membangun disiplin belajar yang lebih
-            baik. Pada tahun 2019, saya memutuskan untuk menempuh pendidikan kejuruan di SMK Negeri 4 Kendari, sebuah langkah yang memperkaya pemahaman saya dalam bidang ilmu praktis dan keterampilan yang lebih spesifik. Di sini, saya
-            semakin termotivasi untuk mendalami ilmu yang dapat diterapkan dalam dunia nyata. Perjalanan ini membawa saya hingga ke Universitas Hasanuddin, di mana pada tahun 2022 saya diterima sebagai mahasiswa Program Studi Teknologi
-            Produksi Tanaman Pangan, Fakultas Vokasi. Sebagai bagian dari angkatan ketiga, saya merasa bangga dan termotivasi untuk mengembangkan diri lebih jauh di bidang ini, sejalan dengan impian saya untuk berkontribusi dalam sektor
-            pertanian berkelanjutan dan produktif.
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-end">
+                  <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/about_(1).jpeg" alt="" />
+                  <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/about_(4).jpeg" alt="" />
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/about_(2).jpeg" alt="" />
+                  <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/about_(3).jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <div class="section-title">
+                <p class="fs-5 fw-medium fst-italic text-primary">About Us</p>
+                <h1 class="display-6">Apasih hama dan penyakit pada tanaman kedelai?</h1>
+              </div>
+                <div class="col-sm-10">
+                  <p style="text-align: justify">
+                      Hama dan penyakit pada tanaman kedelai (Glycine max L.) dapat menyebabkan kerugian signifikan terhadap hasil panen dan kualitas biji. Serangan hama seperti ulat grayak, penggerek polong, dan kutu daun sering ditemukan pada tanaman kedelai. Hama ini tidak hanya merusak daun dan batang, tetapi juga mengganggu proses pembuahan, yang dapat mengurangi hasil panen. Pengendalian hama menjadi penting untuk memastikan tanaman kedelai tumbuh dengan baik dan menghasilkan biji yang berkualitas.
+                  </p>
+                  <p style="text-align: justify">
+                      Selain hama, penyakit juga menjadi ancaman besar bagi tanaman kedelai. Penyakit seperti layu fusarium, karat daun, dan busuk akar dapat menyerang kedelai pada berbagai tahap pertumbuhannya. Layu fusarium misalnya, menyebabkan tanaman menjadi layu dan mati, sementara karat daun menyebabkan kerusakan pada daun yang mengurangi kemampuan fotosintesis tanaman. Penyakit ini biasanya menyebar dengan cepat, terutama pada kondisi lingkungan yang lembap dan kurangnya perawatan tanaman.
+                  </p>
+                </div>
+              </div>
+              <div class="border-top mb-4"></div>
+              <div class="row g-3">
+                <div class="col-sm-8">
+                  <p style="text-align: justify">Pencegahan dan pengendalian hama serta penyakit sangat penting dalam budidaya kedelai. Petani perlu melakukan rotasi tanaman, pemilihan varietas yang tahan terhadap penyakit, serta pengendalian hama secara terintegrasi (IPM). Penggunaan pestisida dan fungisida harus dilakukan dengan hati-hati, agar tidak merusak lingkungan dan keberagaman hayati di sekitar tanaman kedelai. Dengan pengelolaan yang baik, serangan hama dan penyakit dapat diminimalisir, sehingga tanaman kedelai dapat tumbuh sehat dan menghasilkan panen yang optimal.</p>
+                  <p style="text-align: justify">Mengelola hama dan penyakit pada kedelai bukan hanya penting untuk keberhasilan panen, tetapi juga untuk keberlanjutan pertanian kedelai. Oleh karena itu, edukasi mengenai cara-cara pencegahan dan penanggulangan hama serta penyakit menjadi kunci untuk meningkatkan produksi kedelai yang lebih aman dan ramah lingkungan.</p>
+                </div>
+                <div class="col-sm-4">
+                  <img class="img-fluid bg-white w-100" src="img/about_(5).jpg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-        <style>
-          .path-0 {
-            animation: pathAnim-0 4s linear infinite;
-          }
-        </style>
-        <path
-          d="M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-          stroke="none"
-          stroke-width="0"
-          fill="#FFFFFF"
-          fill-opacity="1"
-          class="transition-all duration-300 ease-in-out delay-150 path-0"
-        ></path>
-      </svg>
-    </section>
-    <!-- End About Tyaaa -->
+      <!-- About End -->
 
-    <!-- Galery -->
-    <section class="galery container text-center" id="galery">
-      <h3 class="mb-5 mt-5">𝐺𝑎𝑙𝑒𝑟𝑦</h3>
-      <div class="row d-flex justify-content-center">
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./2.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝐾𝑒𝑙𝑢𝑎𝑟𝑔𝑎 𝐵𝑒𝑠𝑎𝑟 𝐺𝑒𝑡𝑟𝑒𝑖𝑑𝑒 𝑇𝑒𝑚𝑎 𝑀𝑒𝑟𝑎ℎ</figcaption>
-          </figure>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./3.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝐾𝑒𝑙𝑢𝑎𝑟𝑔𝑎 𝐵𝑒𝑠𝑎𝑟 𝐺𝑒𝑡𝑟𝑒𝑖𝑑𝑒 𝑇𝑒𝑚𝑎 𝐻𝑖𝑡𝑎𝑚</figcaption>
-          </figure>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./4.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝐹𝑜𝑡𝑜 𝐵𝑒𝑟𝑠𝑎𝑚𝑎 𝑃𝑎𝑘 𝐴𝑠𝑓𝑎𝑟 𝑇𝑒𝑘𝑝𝑒𝑛𝑔 𝑃𝑟𝑜𝑑𝑢𝑘 𝑃𝑎𝑛𝑔𝑎𝑛</figcaption>
-          </figure>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./5.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝑇𝑢𝑟𝑢 24/7</figcaption>
-          </figure>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./6.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝐴𝑐𝑎𝑟𝑎 𝐵𝑎𝑘𝑎𝑟-𝑏𝑎𝑘𝑎𝑟</figcaption>
-          </figure>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="./7.jpg" class="figure-img img-fluid rounded" alt="" />
-            <figcaption class="figure-caption">𝐾𝑒𝑙𝑢𝑟𝑔𝑎 𝐴𝑢𝑟-𝑎𝑢𝑟𝑎𝑛</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <!-- End Galery -->
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-      <style>
-        .path-0 {
-          animation: pathAnim-0 4s linear infinite;
-        }
-      </style>
-      <path
-        d="M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-        stroke="none"
-        stroke-width="0"
-        fill="#abb8c3"
-        fill-opacity="1"
-        class="transition-all duration-300 ease-in-out delay-150 path-0"
-      ></path>
-    </svg>
-
-    <!-- Contact -->
-    <section class="contact bg-custome pb-3" id="contact">
-      <div class="container">
-        <h3 class="text-center mb-3">𝐶𝑜𝑛𝑡𝑎𝑐𝑡</h3>
-        <div class="row d-flex justify-content-center">
-          <div class="col-6">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <!-- Hama Start -->
+    <div class="container-fluid product py-5">
+        <div class="container py-5">
+          <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+            <p class="fs-5 fw-medium fst-italic text-primary">Hama</p>
+            <h1 class="display-6">Beberapa Hama pada tanaman kedelai</h1>
+          </div>
+          <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+            <a href="" class="d-block product-item rounded">
+              <img src="img/Hama_1.png" alt="" />
+              <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                <h4 class="text-primary">Lalat bibit Ophiomiya phaseoli Try</h4>
+                <span style="display : block; text-align: justify">Hama ini merupakan hama utama pada tanaman kedelai, terutama pada fase pembibitan. Larva lalat ini menyerang daun muda dan batang tanaman, menyebabkan kerusakan berupa bercak-bercak nekrotik. Serangan berat dapat mengurangi pertumbuhan dan hasil tanaman kedelai.</span>
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <a href="" class="d-block product-item rounded">
+              <img src="img/Hama_2.jpg" alt="" />
+              <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                <h4 class="text-primary">Ulat Grayak (Spodoptera litura) </h4>
+                <span style="display : block; text-align: justify">
+                  Ulat gayak pada tanaman kedelai (Spodoptera litura) adalah hama yang sering menyerang daun, batang, dan polong. Larva ulat gayak dapat merusak tanaman kedelai dengan memakan daun, mengurangi fotosintesis, dan menghambat pertumbuhan tanaman.</span>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            </a>
+            <a href="" class="d-block product-item rounded">
+              <img src="img/Hama_3.jpg" alt="" />
+              <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                <h4 class="text-primary">Penggulung Daun (Lamprosema indicata F.)</h4>
+                <span style="display : block; text-align: justify">hama ini merupakan hama tanaman kedelai yang menyebabkan kerusakan dengan cara menggulung dan memakannya. Larva ulat ini berkembang biak di dalam gulungan daun, sehingga menbuat daun tidak dapat berfungsi optimal. Gejala serangan meliputi daun yang menggulung, berlubang, dan menguning.</span>
+              </div>
+            </a>
+            <a href="" class="d-block product-item rounded">
+              <img src="img/Hama_4.jpg" alt="" />
+              <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                <h4 class="text-primary">Penggerek Polong Kedelai (Etiella zinckenella Tr.)</h4>
+                <span style="display : block; text-align: justify">
+                Hama ini menyerang tanaman kedelai dengan cara memakan polong dan biji kedelai. Gejala serangan meliputi adanya lubang kecil di polong dan biji yang rusak, serta polong yang kering dan hampa. Hama ini berkembang biak dengan cara bertelur pada polong kedelai, yang kemudian menetas menjadi larva yang memakan biji.</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <style>
-        .path-0 {
-          animation: pathAnim-0 4s linear infinite;
-        }
-      </style>
-      <path
-        d="M 0,500 L 0,187 C 45.67695153533111,214.8558145270687 91.35390307066223,242.7116290541374 142,259 C 192.64609692933777,275.2883709458626 248.2613392526822,280.00929831051917 302,264 C 355.7386607473178,247.99070168948083 407.60073991860895,211.2511777037859 457,177 C 506.39926008139105,142.7488222962141 553.335701072882,110.98599087433715 613,124 C 672.664298927118,137.01400912566285 745.056455789863,194.80485879886547 808,189 C 870.943544210137,183.19514120113453 924.4384757676658,113.794573930201 977,95 C 1029.5615242323342,76.205426069799 1081.1896411394748,108.01684548033052 1126,142 C 1170.8103588605252,175.98315451966948 1208.8029596744357,212.138044148477 1260,220 C 1311.1970403255643,227.861955851523 1375.5985201627823,207.4309779257615 1440,187 L 1440,500 L 0,500 Z"
-        stroke="none"
-        stroke-width="0"
-        fill="#FFFFFF"
-        fill-opacity="1"
-        class="transition-all duration-300 ease-in-out delay-150 path-0"
-      ></path>
-    </section>
-    <!-- End Contact -->
+      <!-- Hama End -->
 
-    <section class="footer pb-3 pt-5 bg bg-custome" id="footer">
-      <div class="container">
-        <div class="text-center">
-          <p>𝐶𝑟𝑒𝑎𝑡𝑒 𝑏𝑦 : 𝐼𝑓𝑜𝑛𝑡𝑖𝑎 𝐴𝑚𝑎𝑛𝑑𝑎</p>
+    <!-- Penyakit Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+          <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+            <p class="fs-5 fw-medium fst-italic text-primary">Penyakit</p>
+            <h1 class="display-6">Penyakit Pada Tanaman Kedelai</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="store-item position-relative text-center">
+                <img class="img-fluid" src="img/Penyakit_1.png" alt="" />
+                <div class="p-4">
+                  <div class="text-center mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <h4 class="mb-3">Karat Daun</h4>
+                  <p style="text-align: justify">
+                    Penyakit karat daun disebabkan oleh cendawan Phakopsora pachyrhizi. Gejala awal penyakit karat daun pada kedelai ditandai dengan munculnya bercak klorotik kecil yang tidak beraturan pada permukaan daun. Bercak tersebut
+                    kemudian berubah menjadi coklat atau coklat tua dan membentuk pustul yang warnanya seperti karat besi.
+                  </p>
+                </div>
+                <div class="store-overlay">
+                  <a href="penyakit.html" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="store-item position-relative text-center">
+                <img class="img-fluid" src="img/Penyakit_2.png" alt="" />
+                <div class="p-4">
+                  <div class="text-center mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <h4 class="mb-3">Bercak Daun</h4>
+                  <p style="text-align: justify">
+                    Penyakit ini disebabkan oleh Cercospora sojina yang menginfeksi pada semua stadia umur tanaman kedelai, tetapi sangat membahayakan jika terjadi pada waktu pembungaan. Gejala awal pada daun berupa bercak kecil berwarna
+                    kuning yang akan berkembang menjadi abu-abu terang. Serangan yang parah menyebabkan daun berlubang atau sobek dan gugur sebelum waktunya.
+                  </p>
+                </div>
+                <div class="store-overlay">
+                  <a href="penyakit.html" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="store-item position-relative text-center">
+                <img class="img-fluid" src="img/Penyakit_3.png" alt="" />
+                <div class="p-4">
+                  <div class="text-center mb-3">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                  <h4 class="mb-3">Mosaik (Soybean Mosaic Virus)</h4>
+                  <p style="text-align: justify">
+                    Penyakit mosaik disebabkan oleh partikel virus SMV (Soybean mosaic virus). Gejala infeksi SMV berupa daun agak kaku, tulang daun berwarna hijau tua dan kekuningan di sekitar tulang daun, kerdil, daun keriting, dan daun
+                    melengkung ke bawah (malformasi). Infeksi ini juga menyebabkan gejala belang coklat pada kulit biji. Penularan vector penyebar virus ini adalah Aphis Glycine (sejenis kutu daun).
+                  </p>
+                </div>
+                <div class="store-overlay">
+                  <a href="penyakit.html" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <!-- Penyakit End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Team Start -->
+    <div class="container-fluid testimonial py-5 my-5">
+        <div class="container py-5">
+          <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+            <p class="fs-5 fw-medium fst-italic text-white">Team</p>
+          </div>
+          <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+            <div class="testimonial-item p-4 p-lg-5">
+              <div class="d-flex align-items-center justify-content-center">
+                <img class="img-fluid flex-shrink-0" src="img/Ifon.jpg" alt="" />
+                <div class="team-start ms-3">
+                  <h5>Ifontia Amanda</h5>
+                  <span class="text-primary">V026221026</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item p-4 p-lg-5">
+              <div class="d-flex align-items-center justify-content-center">
+                <img class="img-fluid flex-shrink-0" src="img/Honey.jpg" alt="" />
+                <div class="text-start ms-3">
+                  <h5>Honey Pollen Jufri</h5>
+                  <span class="text-primary">V026221056</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5">
+        <div class="container">
+          <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+            <p class="fs-5 fw-medium fst-italic text-primary">Contact Us</p>
+            <h1 class="display-6">Jika Anda Memiliki Pertanyaan, Hubungi Kami</h1>
+          </div>
+          <div class="row g-5 mb-5">
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+              <div class="btn-square mx-auto mb-3">
+                <i class="fa fa-envelope fa-2x text-white"></i>
+              </div>
+              <p class="mb-2">tptpunhas22@example.com</p>
+            </div>
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+              <div class="btn-square mx-auto mb-3">
+                <i class="fa fa-phone fa-2x text-white"></i>
+              </div>
+              <p class="mb-2">0878 2156 2749</p>
+            </div>
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+              <div class="btn-square mx-auto mb-3">
+                <i class="fa fa-map-marker-alt fa-2x text-white"></i>
+              </div>
+              <p class="mb-2">Pangkajene Sidrap, Sulawesi Selatan, Indonesia</p>
+            </div>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100">
+                <iframe class="w-100 rounded" src="https://maps.app.goo.gl/6bP1zFVTK1cnQ9aHA" frameborder="0" style="height: 100%; min-height: 300px; border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Pangkajene Sidrap, Sulawesi Selatan, Indonesia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>0878 2156 2749</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>tptpunhas22@example.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-outline-body me-1" href="https://www.instagram.com/getreide.22"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Create By <a class="fw-medium" href="">Ifontia Amanda & Honey Pollen Jufri</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
